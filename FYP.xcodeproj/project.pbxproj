@@ -38,6 +38,11 @@
 		7D5CD778192F924900812B5A /* Report.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD777192F924900812B5A /* Report.m */; };
 		7D5CD77B192F927700812B5A /* Sightings.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD77A192F927700812B5A /* Sightings.m */; };
 		AC3337F9192F9C6D009CEA27 /* FYPReportBoxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */; };
+		AC3337FE192FB210009CEA27 /* dogexample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC3337FB192FB210009CEA27 /* dogexample.jpg */; };
+		AC3337FF192FB210009CEA27 /* searchicon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3337FC192FB210009CEA27 /* searchicon.png */; };
+		AC333800192FB210009CEA27 /* male.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3337FD192FB210009CEA27 /* male.png */; };
+		AC333804192FB534009CEA27 /* backgroundblack.png in Resources */ = {isa = PBXBuildFile; fileRef = AC333803192FB534009CEA27 /* backgroundblack.png */; };
+		AC333807192FB6E4009CEA27 /* FYPReportBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC333806192FB6E4009CEA27 /* FYPReportBoxViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +109,12 @@
 		7D5CD779192F927700812B5A /* Sightings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sightings.h; sourceTree = "<group>"; };
 		7D5CD77A192F927700812B5A /* Sightings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sightings.m; sourceTree = "<group>"; };
 		AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYPReportBoxViewController.xib; sourceTree = "<group>"; };
+		AC3337FB192FB210009CEA27 /* dogexample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dogexample.jpg; sourceTree = "<group>"; };
+		AC3337FC192FB210009CEA27 /* searchicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchicon.png; sourceTree = "<group>"; };
+		AC3337FD192FB210009CEA27 /* male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = male.png; sourceTree = "<group>"; };
+		AC333803192FB534009CEA27 /* backgroundblack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundblack.png; sourceTree = "<group>"; };
+		AC333805192FB6E4009CEA27 /* FYPReportBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYPReportBoxViewController.h; sourceTree = "<group>"; };
+		AC333806192FB6E4009CEA27 /* FYPReportBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYPReportBoxViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +174,7 @@
 		7D5CD60B192F831300812B5A /* FYP */ = {
 			isa = PBXGroup;
 			children = (
+				AC3337FA192FB0BE009CEA27 /* Resources */,
 				AC3337F3192F9678009CEA27 /* Views */,
 				7D5CD614192F831300812B5A /* FYPAppDelegate.h */,
 				7D5CD615192F831300812B5A /* FYPAppDelegate.m */,
@@ -266,8 +278,21 @@
 				7D5CD61A192F831300812B5A /* FYPHomeViewController.h */,
 				7D5CD61B192F831300812B5A /* FYPHomeViewController.m */,
 				AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */,
+				AC333805192FB6E4009CEA27 /* FYPReportBoxViewController.h */,
+				AC333806192FB6E4009CEA27 /* FYPReportBoxViewController.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		AC3337FA192FB0BE009CEA27 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC3337FB192FB210009CEA27 /* dogexample.jpg */,
+				AC333803192FB534009CEA27 /* backgroundblack.png */,
+				AC3337FC192FB210009CEA27 /* searchicon.png */,
+				AC3337FD192FB210009CEA27 /* male.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +372,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3337FE192FB210009CEA27 /* dogexample.jpg in Resources */,
+				AC333800192FB210009CEA27 /* male.png in Resources */,
+				AC3337FF192FB210009CEA27 /* searchicon.png in Resources */,
+				AC333804192FB534009CEA27 /* backgroundblack.png in Resources */,
 				AC3337F9192F9C6D009CEA27 /* FYPReportBoxViewController.xib in Resources */,
 				7D5CD621192F831300812B5A /* Images.xcassets in Resources */,
 				7D5CD610192F831300812B5A /* InfoPlist.strings in Resources */,
@@ -387,6 +416,7 @@
 				7D5CD771192F902100812B5A /* AFNetworkActivityIndicatorManager.m in Sources */,
 				7D5CD61C192F831300812B5A /* FYPHomeViewController.m in Sources */,
 				7D5CD646192F8AAB00812B5A /* MediaCache.m in Sources */,
+				AC333807192FB6E4009CEA27 /* FYPReportBoxViewController.m in Sources */,
 				7D5CD647192F8AAB00812B5A /* ServerCommunications.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

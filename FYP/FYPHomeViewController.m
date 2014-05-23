@@ -27,6 +27,11 @@
     [self updateList:nil];
 }
 
+-(void) viewDidAppear:(BOOL)animated
+{
+    [self updateList:nil];
+}
+
 - (IBAction) updateList:(id)sender
 {
     switch (self.modeControl.selectedSegmentIndex) {

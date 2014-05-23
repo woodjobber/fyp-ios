@@ -322,7 +322,14 @@ typedef enum
         
         if([returned objectForKey:@"errors"] == nil)
         {
-
+            [self.fldSpecie setText:@""];
+            [self.txtDecription setText:@""];
+            [self.fldRace setText:@""];
+            [self.fldSize setText:@""];
+            [self.fldColor setText:@""];
+            [self.fldAge setText:@""];
+            [self.fldGender setText:@""];
+            [self.fldName setText:@""];
         }
     });
 }

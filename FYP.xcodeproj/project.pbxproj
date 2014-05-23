@@ -14,8 +14,8 @@
 		7D5CD612192F831300812B5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD611192F831300812B5A /* main.m */; };
 		7D5CD616192F831300812B5A /* FYPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD615192F831300812B5A /* FYPAppDelegate.m */; };
 		7D5CD619192F831300812B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CD617192F831300812B5A /* Main.storyboard */; };
-		7D5CD61C192F831300812B5A /* FYPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD61B192F831300812B5A /* FYPFirstViewController.m */; };
-		7D5CD61F192F831300812B5A /* FYPSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD61E192F831300812B5A /* FYPSecondViewController.m */; };
+		7D5CD61C192F831300812B5A /* FYPHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD61B192F831300812B5A /* FYPHome.m */; };
+		7D5CD61F192F831300812B5A /* FYPDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD61E192F831300812B5A /* FYPDetail.m */; };
 		7D5CD621192F831300812B5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CD620192F831300812B5A /* Images.xcassets */; };
 		7D5CD628192F831300812B5A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5CD627192F831300812B5A /* XCTest.framework */; };
 		7D5CD629192F831300812B5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5CD605192F831300812B5A /* Foundation.framework */; };
@@ -38,6 +38,8 @@
 		7D5CD778192F924900812B5A /* Report.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD777192F924900812B5A /* Report.m */; };
 		7D5CD77B192F927700812B5A /* Sightings.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD77A192F927700812B5A /* Sightings.m */; };
 		7D5CD77E192F93C400812B5A /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD77D192F93C400812B5A /* Animal.m */; };
+		AC3337F7192F9ADA009CEA27 /* FYPDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3337F6192F9ADA009CEA27 /* FYPDetail.xib */; };
+		AC3337F9192F9C6D009CEA27 /* FYPReportBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3337F8192F9C6D009CEA27 /* FYPReportBox.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,10 +64,10 @@
 		7D5CD614192F831300812B5A /* FYPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYPAppDelegate.h; sourceTree = "<group>"; };
 		7D5CD615192F831300812B5A /* FYPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPAppDelegate.m; sourceTree = "<group>"; };
 		7D5CD618192F831300812B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7D5CD61A192F831300812B5A /* FYPFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYPFirstViewController.h; sourceTree = "<group>"; };
-		7D5CD61B192F831300812B5A /* FYPFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPFirstViewController.m; sourceTree = "<group>"; };
-		7D5CD61D192F831300812B5A /* FYPSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYPSecondViewController.h; sourceTree = "<group>"; };
-		7D5CD61E192F831300812B5A /* FYPSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPSecondViewController.m; sourceTree = "<group>"; };
+		7D5CD61A192F831300812B5A /* FYPHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYPHome.h; sourceTree = "<group>"; };
+		7D5CD61B192F831300812B5A /* FYPHome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPHome.m; sourceTree = "<group>"; };
+		7D5CD61D192F831300812B5A /* FYPDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYPDetail.h; sourceTree = "<group>"; };
+		7D5CD61E192F831300812B5A /* FYPDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPDetail.m; sourceTree = "<group>"; };
 		7D5CD620192F831300812B5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7D5CD626192F831300812B5A /* FYPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5CD627192F831300812B5A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -105,6 +107,8 @@
 		7D5CD77A192F927700812B5A /* Sightings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sightings.m; sourceTree = "<group>"; };
 		7D5CD77C192F93C400812B5A /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
 		7D5CD77D192F93C400812B5A /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		AC3337F6192F9ADA009CEA27 /* FYPDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYPDetail.xib; sourceTree = "<group>"; };
+		AC3337F8192F9C6D009CEA27 /* FYPReportBox.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYPReportBox.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,13 +168,10 @@
 		7D5CD60B192F831300812B5A /* FYP */ = {
 			isa = PBXGroup;
 			children = (
+				AC3337F3192F9678009CEA27 /* Views */,
 				7D5CD614192F831300812B5A /* FYPAppDelegate.h */,
 				7D5CD615192F831300812B5A /* FYPAppDelegate.m */,
 				7D5CD617192F831300812B5A /* Main.storyboard */,
-				7D5CD61A192F831300812B5A /* FYPFirstViewController.h */,
-				7D5CD61B192F831300812B5A /* FYPFirstViewController.m */,
-				7D5CD61D192F831300812B5A /* FYPSecondViewController.h */,
-				7D5CD61E192F831300812B5A /* FYPSecondViewController.m */,
 				7D5CD63D192F8AAB00812B5A /* Communications */,
 				7D5CD620192F831300812B5A /* Images.xcassets */,
 				7D5CD60C192F831300812B5A /* Supporting Files */,
@@ -264,6 +265,19 @@
 			path = AFNetworking/AFNetworking;
 			sourceTree = SOURCE_ROOT;
 		};
+		AC3337F3192F9678009CEA27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D5CD61D192F831300812B5A /* FYPDetail.h */,
+				AC3337F6192F9ADA009CEA27 /* FYPDetail.xib */,
+				7D5CD61E192F831300812B5A /* FYPDetail.m */,
+				7D5CD61A192F831300812B5A /* FYPHome.h */,
+				AC3337F8192F9C6D009CEA27 /* FYPReportBox.xib */,
+				7D5CD61B192F831300812B5A /* FYPHome.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -341,8 +355,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3337F9192F9C6D009CEA27 /* FYPReportBox.xib in Resources */,
 				7D5CD621192F831300812B5A /* Images.xcassets in Resources */,
 				7D5CD610192F831300812B5A /* InfoPlist.strings in Resources */,
+				AC3337F7192F9ADA009CEA27 /* FYPDetail.xib in Resources */,
 				7D5CD619192F831300812B5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,9 +392,9 @@
 				7D5CD645192F8AAB00812B5A /* CommObject.m in Sources */,
 				7D5CD612192F831300812B5A /* main.m in Sources */,
 				7D5CD772192F902100812B5A /* AFPropertyListRequestOperation.m in Sources */,
-				7D5CD61F192F831300812B5A /* FYPSecondViewController.m in Sources */,
+				7D5CD61F192F831300812B5A /* FYPDetail.m in Sources */,
 				7D5CD771192F902100812B5A /* AFNetworkActivityIndicatorManager.m in Sources */,
-				7D5CD61C192F831300812B5A /* FYPFirstViewController.m in Sources */,
+				7D5CD61C192F831300812B5A /* FYPHome.m in Sources */,
 				7D5CD77E192F93C400812B5A /* Animal.m in Sources */,
 				7D5CD646192F8AAB00812B5A /* MediaCache.m in Sources */,
 				7D5CD647192F8AAB00812B5A /* ServerCommunications.m in Sources */,

@@ -37,7 +37,6 @@
 		7D5CD775192F902100812B5A /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD76C192F902100812B5A /* UIImageView+AFNetworking.m */; };
 		7D5CD778192F924900812B5A /* Report.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD777192F924900812B5A /* Report.m */; };
 		7D5CD77B192F927700812B5A /* Sightings.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD77A192F927700812B5A /* Sightings.m */; };
-		7D5CD77E192F93C400812B5A /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD77D192F93C400812B5A /* Animal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,8 +102,6 @@
 		7D5CD777192F924900812B5A /* Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Report.m; sourceTree = "<group>"; };
 		7D5CD779192F927700812B5A /* Sightings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sightings.h; sourceTree = "<group>"; };
 		7D5CD77A192F927700812B5A /* Sightings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sightings.m; sourceTree = "<group>"; };
-		7D5CD77C192F93C400812B5A /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
-		7D5CD77D192F93C400812B5A /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,8 +228,6 @@
 				7D5CD777192F924900812B5A /* Report.m */,
 				7D5CD779192F927700812B5A /* Sightings.h */,
 				7D5CD77A192F927700812B5A /* Sightings.m */,
-				7D5CD77C192F93C400812B5A /* Animal.h */,
-				7D5CD77D192F93C400812B5A /* Animal.m */,
 			);
 			path = CommObjects;
 			sourceTree = "<group>";
@@ -379,7 +374,6 @@
 				7D5CD61F192F831300812B5A /* FYPSecondViewController.m in Sources */,
 				7D5CD771192F902100812B5A /* AFNetworkActivityIndicatorManager.m in Sources */,
 				7D5CD61C192F831300812B5A /* FYPFirstViewController.m in Sources */,
-				7D5CD77E192F93C400812B5A /* Animal.m in Sources */,
 				7D5CD646192F8AAB00812B5A /* MediaCache.m in Sources */,
 				7D5CD647192F8AAB00812B5A /* ServerCommunications.m in Sources */,
 			);

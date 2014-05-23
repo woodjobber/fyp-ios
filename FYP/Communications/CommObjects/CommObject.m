@@ -79,7 +79,7 @@
         data = [NSJSONSerialization dataWithJSONObject:info options:0 error:&error];
     }
     
-    [[ServerCommunications getSharedInstance] sendJSONRequestToURL:[NSString stringWithFormat:@"%@.json",[self name]] Data:data Method:@"POST" completion:^(NSDictionary* server_info)
+    [[ServerCommunications getSharedInstance] sendJSONRequestToURL:[NSString stringWithFormat:@"%@",[self name]] Data:data Method:@"POST" completion:^(NSDictionary* server_info)
      {
          if([server_info objectForKey:@"errors"] == nil)
              info = server_info;
@@ -98,7 +98,7 @@
 
 - (void) initObjectById:(NSInteger) identifier
 {
-    [[ServerCommunications getSharedInstance] sendJSONRequestToURL:[NSString stringWithFormat:@"%@/%d.json",[self name],identifier] Data:nil contentType: @"application/json; charset=utf-8" Method:@"GET" usePriorityQueue:YES completion:^(NSDictionary* server_info)
+    [[ServerCommunications getSharedInstance] sendJSONRequestToURL:[NSString stringWithFormat:@"%@/%d",[self name],identifier] Data:nil contentType: @"application/json; charset=utf-8" Method:@"GET" usePriorityQueue:YES completion:^(NSDictionary* server_info)
      {
          if(server_info)
          {
@@ -123,7 +123,7 @@
     NSError* error;
     NSData *data = [NSJSONSerialization dataWithJSONObject:info options:0 error:&error];
 
-    [[ServerCommunications getSharedInstance] sendJSONRequestToURL:[NSString stringWithFormat:@"%@/%@.json",[self name],[info objectForKey:@"id"]] Data:data Method:@"PUT" completion:^(NSDictionary* server_info)
+    [[ServerCommunications getSharedInstance] sendJSONRequestToURL:[NSString stringWithFormat:@"%@/%@",[self name],[info objectForKey:@"id"]] Data:data Method:@"PUT" completion:^(NSDictionary* server_info)
      {
          if([self.delegate respondsToSelector:@selector(sendInfoReturned:)] )
          {
@@ -134,7 +134,7 @@
 
 - (void) deleteObjectInServer
 {
-    [[ServerCommunications getSharedInstance] sendJSONRequestToURL:[NSString stringWithFormat:@"%@/%@.json",[self name],[info objectForKey:@"id"]] Data:nil Method:@"DELETE" completion:^(NSDictionary* server_info)
+    [[ServerCommunications getSharedInstance] sendJSONRequestToURL:[NSString stringWithFormat:@"%@/%@",[self name],[info objectForKey:@"id"]] Data:nil Method:@"DELETE" completion:^(NSDictionary* server_info)
      {
          if([self.delegate respondsToSelector:@selector(deleteObjectReturned:)])
              [self.delegate performSelector:@selector(deleteObjectReturned:) withObject:self];
@@ -143,7 +143,7 @@
 
 + (void) search:(NSDictionary*) searchData name: (NSString*) name completion:(void (^)(NSDictionary* ))completion
 {
-    NSString* url = [NSString stringWithFormat:@"search/%@.json",name];
+    NSString* url = [NSString stringWithFormat:@"search/%@",name];
     NSString* separator = @"?";
     
     for(NSString* key in searchData.allKeys)
@@ -165,42 +165,6 @@
 + (void) search:(NSDictionary*) searchData  completion:(void (^)(NSDictionary* ))completion
 {
     return [self search:searchData name:[self name] completion:completion];
-}
-
-- (void) getComments:(void (^)(NSDictionary*)) completion
-{
-    [[ServerCommunications getSharedInstance] sendJSONRequestToURL:[NSString stringWithFormat:@"%@/%@/comments.json",[self name],[info objectForKey:@"id"]] Data:nil Method:@"GET" completion:completion];
-
-}
-
-- (void) sendComment:(NSDictionary*) comment
-{
-    NSError* error;
-    NSData *data = [NSJSONSerialization dataWithJSONObject:comment options:0 error:&error];
-
-    [[ServerCommunications getSharedInstance] sendJSONRequestToURL:[NSString stringWithFormat:@"%@/%@/comments.json",[self name],[info objectForKey:@"id"]] Data:data Method:@"POST" completion:^(NSDictionary* server_info)
-     {
-         if([self.delegate respondsToSelector:@selector(updateInfoReturned:)] )
-             [self.delegate performSelector:@selector(updateInfoReturned:) withObject:server_info];
-     }];
-}
-
-- (void) linkSpot:(NSInteger) spotID
-{
-    [[ServerCommunications getSharedInstance] sendJSONRequestToURL:[NSString stringWithFormat:@"%@/%@/spots/%d/add_spot.json",[self name],[info objectForKey:@"id"],spotID] Data:nil Method:@"POST" completion:^(NSDictionary* server_info)
-     {
-         if([self.delegate respondsToSelector:@selector(updateInfoReturned:)] )
-             [self.delegate performSelector:@selector(updateInfoReturned:) withObject:server_info];
-     }]; 
-}
-
-- (void) unlinkSpot:(NSInteger) spotID
-{
-    [[ServerCommunications getSharedInstance] sendJSONRequestToURL:[NSString stringWithFormat:@"%@/%@/spots/%d/remove_spot.json",[self name],[info objectForKey:@"id"],spotID] Data:nil Method:@"POST" completion:^(NSDictionary* server_info)
-     {
-         if([self.delegate respondsToSelector:@selector(updateInfoReturned:)] )
-             [self.delegate performSelector:@selector(updateInfoReturned:) withObject:server_info];
-     }];
 }
 
 @end

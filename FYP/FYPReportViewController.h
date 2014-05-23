@@ -10,4 +10,6 @@
 
 @interface FYPReportViewController : UIViewController
 
+- (IBAction)showOptions:(id)sender;
+
 @end

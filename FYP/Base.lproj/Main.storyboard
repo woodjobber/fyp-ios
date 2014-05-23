@@ -114,37 +114,37 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dog, Cat, Dinosaur" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sPC-IV-VEf">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dog, Cat, Dinosaur" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sPC-IV-VEf">
                                         <rect key="frame" x="96" y="91" width="209" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Boxer, Setter, Chiguagua" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1X-cF-b8X">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Boxer, Setter, Chiguagua" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1X-cF-b8X">
                                         <rect key="frame" x="96" y="126" width="209" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Big, small, huge, " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HP5-pH-EBk">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Big, small, huge, " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HP5-pH-EBk">
                                         <rect key="frame" x="96" y="161" width="209" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Brown, white, black" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pgp-QN-ldW">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Brown, white, black" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pgp-QN-ldW">
                                         <rect key="frame" x="96" y="196" width="209" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Young, Adult, Old" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zj-z7-KxU">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Young, Adult, Old" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zj-z7-KxU">
                                         <rect key="frame" x="96" y="231" width="209" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Male, Female" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ipo-UA-qy5">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Male, Female" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ipo-UA-qy5">
                                         <rect key="frame" x="96" y="266" width="209" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -205,6 +205,66 @@
                                             <segment title="Found a lost pet"/>
                                         </segments>
                                     </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp2-3p-z5P">
+                                        <rect key="frame" x="96" y="91" width="209" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showOptions:" destination="oX6-n9-qkS" eventType="touchUpInside" id="Cpe-W5-Nrr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teb-dU-hOF">
+                                        <rect key="frame" x="96" y="126" width="209" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showOptions:" destination="oX6-n9-qkS" eventType="touchUpInside" id="1qg-o6-nfL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpj-KS-Lgf">
+                                        <rect key="frame" x="96" y="161" width="209" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showOptions:" destination="oX6-n9-qkS" eventType="touchUpInside" id="mu4-rg-9fv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDh-F2-XUD">
+                                        <rect key="frame" x="96" y="196" width="209" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showOptions:" destination="oX6-n9-qkS" eventType="touchUpInside" id="A1M-eR-Kfa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knf-0i-RN1">
+                                        <rect key="frame" x="96" y="231" width="209" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showOptions:" destination="oX6-n9-qkS" eventType="touchUpInside" id="xEi-Zf-cBY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYh-6d-cRs">
+                                        <rect key="frame" x="96" y="266" width="209" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showOptions:" destination="oX6-n9-qkS" eventType="touchUpInside" id="8Uh-NQ-ezB"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PI5-3w-pyY">
@@ -220,7 +280,21 @@
                     <tabBarItem key="tabBarItem" title="Report" image="reporte" id="wHN-Xs-KKi"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="btnAge" destination="Knf-0i-RN1" id="VYF-rz-gZN"/>
+                        <outlet property="btnColor" destination="kDh-F2-XUD" id="Quv-fs-BeV"/>
+                        <outlet property="btnGender" destination="IYh-6d-cRs" id="LRb-8m-odq"/>
+                        <outlet property="btnRace" destination="teb-dU-hOF" id="aqT-SW-nbP"/>
                         <outlet property="btnReport" destination="FPb-KW-jIM" id="TL0-V6-Ewf"/>
+                        <outlet property="btnSize" destination="qpj-KS-Lgf" id="VSH-r6-g4A"/>
+                        <outlet property="btnSpecie" destination="Gp2-3p-z5P" id="vQi-vl-Den"/>
+                        <outlet property="fldAge" destination="2zj-z7-KxU" id="6zZ-eb-Con"/>
+                        <outlet property="fldColor" destination="Pgp-QN-ldW" id="n6S-QS-ZAZ"/>
+                        <outlet property="fldGender" destination="ipo-UA-qy5" id="sry-S2-vST"/>
+                        <outlet property="fldRace" destination="a1X-cF-b8X" id="0d4-Ic-Lxw"/>
+                        <outlet property="fldSize" destination="HP5-pH-EBk" id="d6F-mc-KNS"/>
+                        <outlet property="fldSpecie" destination="sPC-IV-VEf" id="eEn-mQ-0qY"/>
+                        <outlet property="photosCollection" destination="xdP-Gn-9cg" id="IdD-yc-XnW"/>
+                        <outlet property="reportKind" destination="2h1-mV-U4T" id="9wz-LK-pDs"/>
                         <outlet property="scrllView" destination="dSo-fE-ySL" id="HH6-Bh-RyK"/>
                         <outlet property="txtDecription" destination="crT-rg-J7l" id="Wnc-df-vaV"/>
                     </connections>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D16F4E1192FD0EF00C48E76 /* Choices.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D16F4E0192FD0EF00C48E76 /* Choices.m */; };
+		7D16F4E5192FD24700C48E76 /* ChoicesPickerDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D16F4E3192FD24700C48E76 /* ChoicesPickerDialog.m */; };
+		7D16F4E6192FD24700C48E76 /* ChoicesPickerDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D16F4E4192FD24700C48E76 /* ChoicesPickerDialog.xib */; };
 		7D5CD606192F831300812B5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5CD605192F831300812B5A /* Foundation.framework */; };
 		7D5CD608192F831300812B5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5CD607192F831300812B5A /* CoreGraphics.framework */; };
 		7D5CD60A192F831300812B5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5CD609192F831300812B5A /* UIKit.framework */; };
@@ -52,6 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D16F4DF192FD0EF00C48E76 /* Choices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Choices.h; sourceTree = "<group>"; };
+		7D16F4E0192FD0EF00C48E76 /* Choices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Choices.m; sourceTree = "<group>"; };
+		7D16F4E2192FD24700C48E76 /* ChoicesPickerDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoicesPickerDialog.h; sourceTree = "<group>"; };
+		7D16F4E3192FD24700C48E76 /* ChoicesPickerDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoicesPickerDialog.m; sourceTree = "<group>"; };
+		7D16F4E4192FD24700C48E76 /* ChoicesPickerDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoicesPickerDialog.xib; sourceTree = "<group>"; };
 		7D5CD602192F831300812B5A /* FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5CD605192F831300812B5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7D5CD607192F831300812B5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -213,6 +221,9 @@
 				7D5CD63E192F8AAB00812B5A /* CommObjects */,
 				7D5CD641192F8AAB00812B5A /* MediaCache.h */,
 				7D5CD642192F8AAB00812B5A /* MediaCache.m */,
+				7D16F4E2192FD24700C48E76 /* ChoicesPickerDialog.h */,
+				7D16F4E3192FD24700C48E76 /* ChoicesPickerDialog.m */,
+				7D16F4E4192FD24700C48E76 /* ChoicesPickerDialog.xib */,
 				7D5CD643192F8AAB00812B5A /* ServerCommunications.h */,
 				7D5CD644192F8AAB00812B5A /* ServerCommunications.m */,
 			);
@@ -230,6 +241,8 @@
 				7D5CD777192F924900812B5A /* Report.m */,
 				7D5CD779192F927700812B5A /* Sightings.h */,
 				7D5CD77A192F927700812B5A /* Sightings.m */,
+				7D16F4DF192FD0EF00C48E76 /* Choices.h */,
+				7D16F4E0192FD0EF00C48E76 /* Choices.m */,
 			);
 			path = CommObjects;
 			sourceTree = "<group>";
@@ -352,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D16F4E6192FD24700C48E76 /* ChoicesPickerDialog.xib in Resources */,
 				AC3337F9192F9C6D009CEA27 /* FYPReportBoxViewController.xib in Resources */,
 				7D5CD621192F831300812B5A /* Images.xcassets in Resources */,
 				7D5CD610192F831300812B5A /* InfoPlist.strings in Resources */,
@@ -375,7 +389,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D5CD616192F831300812B5A /* FYPAppDelegate.m in Sources */,
+				7D16F4E1192FD0EF00C48E76 /* Choices.m in Sources */,
 				7D5CD77B192F927700812B5A /* Sightings.m in Sources */,
+				7D16F4E5192FD24700C48E76 /* ChoicesPickerDialog.m in Sources */,
 				7D5CD778192F924900812B5A /* Report.m in Sources */,
 				7D5CD775192F902100812B5A /* UIImageView+AFNetworking.m in Sources */,
 				7D5CD64A192F8D9800812B5A /* Account.m in Sources */,

@@ -264,8 +264,8 @@
 				7D5CD61D192F831300812B5A /* FYPSearchViewController.h */,
 				7D5CD61E192F831300812B5A /* FYPSearchViewController.m */,
 				7D5CD61A192F831300812B5A /* FYPHomeViewController.h */,
-				AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */,
 				7D5CD61B192F831300812B5A /* FYPHomeViewController.m */,
+				AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";

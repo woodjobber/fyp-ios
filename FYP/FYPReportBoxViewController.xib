@@ -28,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="tintColor" red="0.56820186490000002" green="1" blue="0.52007795960000003" alpha="1" colorSpace="calibratedRGB"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="searchicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="hTT-4C-Sg8" userLabel="SearchLost">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search_light.png" translatesAutoresizingMaskIntoConstraints="NO" id="hTT-4C-Sg8" userLabel="SearchLost">
                         <rect key="frame" x="11" y="8" width="24" height="24"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
@@ -53,8 +53,8 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="male.png" translatesAutoresizingMaskIntoConstraints="NO" id="OAl-qZ-Z6l" userLabel="Gender">
-                        <rect key="frame" x="280" y="279" width="40" height="40"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="femaleicon" translatesAutoresizingMaskIntoConstraints="NO" id="OAl-qZ-Z6l" userLabel="Gender">
+                        <rect key="frame" x="290" y="285" width="30" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
                 </subviews>
@@ -66,7 +66,7 @@
     <resources>
         <image name="backgroundblack.png" width="571" height="523"/>
         <image name="dogexample.jpg" width="260" height="214"/>
-        <image name="male.png" width="420" height="420"/>
-        <image name="searchicon.png" width="600" height="598"/>
+        <image name="femaleicon" width="30" height="30"/>
+        <image name="search_light.png" width="600" height="598"/>
     </resources>
 </document>

@@ -40,10 +40,10 @@
 		7D5CD781192FBB1000812B5A /* FYPReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD780192FBB1000812B5A /* FYPReportViewController.m */; };
 		AC3337F9192F9C6D009CEA27 /* FYPReportBoxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */; };
 		AC3337FE192FB210009CEA27 /* dogexample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC3337FB192FB210009CEA27 /* dogexample.jpg */; };
-		AC3337FF192FB210009CEA27 /* searchicon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3337FC192FB210009CEA27 /* searchicon.png */; };
-		AC333800192FB210009CEA27 /* male.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3337FD192FB210009CEA27 /* male.png */; };
 		AC333804192FB534009CEA27 /* backgroundblack.png in Resources */ = {isa = PBXBuildFile; fileRef = AC333803192FB534009CEA27 /* backgroundblack.png */; };
 		AC333807192FB6E4009CEA27 /* FYPReportBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC333806192FB6E4009CEA27 /* FYPReportBoxViewController.m */; };
+		AC333809192FD218009CEA27 /* search_light.png in Resources */ = {isa = PBXBuildFile; fileRef = AC333808192FD218009CEA27 /* search_light.png */; };
+		AC33380B192FD353009CEA27 /* sight_light.png in Resources */ = {isa = PBXBuildFile; fileRef = AC33380A192FD353009CEA27 /* sight_light.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,11 +113,11 @@
 		7D5CD780192FBB1000812B5A /* FYPReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYPReportViewController.m; sourceTree = "<group>"; };
 		AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYPReportBoxViewController.xib; sourceTree = "<group>"; };
 		AC3337FB192FB210009CEA27 /* dogexample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dogexample.jpg; sourceTree = "<group>"; };
-		AC3337FC192FB210009CEA27 /* searchicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchicon.png; sourceTree = "<group>"; };
-		AC3337FD192FB210009CEA27 /* male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = male.png; sourceTree = "<group>"; };
 		AC333803192FB534009CEA27 /* backgroundblack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundblack.png; sourceTree = "<group>"; };
 		AC333805192FB6E4009CEA27 /* FYPReportBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYPReportBoxViewController.h; sourceTree = "<group>"; };
 		AC333806192FB6E4009CEA27 /* FYPReportBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYPReportBoxViewController.m; sourceTree = "<group>"; };
+		AC333808192FD218009CEA27 /* search_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_light.png; sourceTree = "<group>"; };
+		AC33380A192FD353009CEA27 /* sight_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sight_light.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,9 +280,9 @@
 				7D5CD61E192F831300812B5A /* FYPSearchViewController.m */,
 				7D5CD61A192F831300812B5A /* FYPHomeViewController.h */,
 				7D5CD61B192F831300812B5A /* FYPHomeViewController.m */,
-				AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */,
 				7D5CD77F192FBB1000812B5A /* FYPReportViewController.h */,
 				7D5CD780192FBB1000812B5A /* FYPReportViewController.m */,
+				AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */,
 				AC333805192FB6E4009CEA27 /* FYPReportBoxViewController.h */,
 				AC333806192FB6E4009CEA27 /* FYPReportBoxViewController.m */,
 			);
@@ -293,9 +293,9 @@
 			isa = PBXGroup;
 			children = (
 				AC3337FB192FB210009CEA27 /* dogexample.jpg */,
+				AC33380A192FD353009CEA27 /* sight_light.png */,
+				AC333808192FD218009CEA27 /* search_light.png */,
 				AC333803192FB534009CEA27 /* backgroundblack.png */,
-				AC3337FC192FB210009CEA27 /* searchicon.png */,
-				AC3337FD192FB210009CEA27 /* male.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -378,9 +378,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC3337FE192FB210009CEA27 /* dogexample.jpg in Resources */,
-				AC333800192FB210009CEA27 /* male.png in Resources */,
-				AC3337FF192FB210009CEA27 /* searchicon.png in Resources */,
+				AC333809192FD218009CEA27 /* search_light.png in Resources */,
 				AC333804192FB534009CEA27 /* backgroundblack.png in Resources */,
+				AC33380B192FD353009CEA27 /* sight_light.png in Resources */,
 				AC3337F9192F9C6D009CEA27 /* FYPReportBoxViewController.xib in Resources */,
 				7D5CD621192F831300812B5A /* Images.xcassets in Resources */,
 				7D5CD610192F831300812B5A /* InfoPlist.strings in Resources */,

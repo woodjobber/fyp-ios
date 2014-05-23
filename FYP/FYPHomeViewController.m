@@ -7,19 +7,49 @@
 //
 
 #import "FYPHomeViewController.h"
+#import "Sightings.h"
 
 @interface FYPHomeViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property  (nonatomic, strong) NSArray* objects;
+@property (nonatomic, strong) IBOutlet UITableView* tableView;
+@property (nonatomic, strong) IBOutlet UISegmentedControl* modeControl;
 @end
 
-@implementation FYPFirstViewController
+@implementation FYPHomeViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.objects = [[NSArray alloc] init];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self updateList:nil];
+}
+
+- (IBAction) updateList:(id)sender
+{
+    switch (self.modeControl.selectedSegmentIndex) {
+        case 0:
+        {
+            [Report list:^(NSDictionary * dic) {
+                
+                self.objects = [dic objectForKey:@"reports"];
+                [self.tableView  reloadData];
+            }];
+        }
+        break;
+
+        case 1:
+        default:
+        {
+            [Sightings list:^(NSDictionary * dic) {
+                
+                self.objects = [dic objectForKey:@"sightings"];
+                [self.tableView  reloadData];
+            }];
+        }
+        break;
+    };
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,4 +10,6 @@
 
 @interface FYPHomeViewController : UIViewController
 
+- (IBAction) updateList:(id)sender;
+
 @end

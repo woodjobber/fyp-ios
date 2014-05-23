@@ -37,6 +37,7 @@
 		7D5CD775192F902100812B5A /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD76C192F902100812B5A /* UIImageView+AFNetworking.m */; };
 		7D5CD778192F924900812B5A /* Report.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD777192F924900812B5A /* Report.m */; };
 		7D5CD77B192F927700812B5A /* Sightings.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD77A192F927700812B5A /* Sightings.m */; };
+		7D5CD781192FBB1000812B5A /* FYPReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD780192FBB1000812B5A /* FYPReportViewController.m */; };
 		AC3337F9192F9C6D009CEA27 /* FYPReportBoxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,8 @@
 		7D5CD777192F924900812B5A /* Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Report.m; sourceTree = "<group>"; };
 		7D5CD779192F927700812B5A /* Sightings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sightings.h; sourceTree = "<group>"; };
 		7D5CD77A192F927700812B5A /* Sightings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sightings.m; sourceTree = "<group>"; };
+		7D5CD77F192FBB1000812B5A /* FYPReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYPReportViewController.h; sourceTree = "<group>"; };
+		7D5CD780192FBB1000812B5A /* FYPReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYPReportViewController.m; sourceTree = "<group>"; };
 		AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYPReportBoxViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -266,6 +269,8 @@
 				7D5CD61A192F831300812B5A /* FYPHomeViewController.h */,
 				7D5CD61B192F831300812B5A /* FYPHomeViewController.m */,
 				AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */,
+				7D5CD77F192FBB1000812B5A /* FYPReportViewController.h */,
+				7D5CD780192FBB1000812B5A /* FYPReportViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -375,6 +380,7 @@
 				7D5CD775192F902100812B5A /* UIImageView+AFNetworking.m in Sources */,
 				7D5CD64A192F8D9800812B5A /* Account.m in Sources */,
 				7D5CD770192F902100812B5A /* AFJSONRequestOperation.m in Sources */,
+				7D5CD781192FBB1000812B5A /* FYPReportViewController.m in Sources */,
 				7D5CD76E192F902100812B5A /* AFHTTPRequestOperation.m in Sources */,
 				7D5CD774192F902100812B5A /* AFXMLRequestOperation.m in Sources */,
 				7D5CD773192F902100812B5A /* AFURLConnectionOperation.m in Sources */,

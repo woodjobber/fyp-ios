@@ -50,7 +50,4 @@
 - (void) getComments:(void (^)(NSDictionary*)) completion;
 - (void) sendComment:(NSDictionary*) comment;
 
-- (void) linkSpot:(NSInteger) spotID ;
-- (void) unlinkSpot:(NSInteger) spotID;
-
 @end

@@ -10,4 +10,14 @@
 
 @implementation Sightings
 
++ (NSString*) name
+{
+    return @"sightings";
+}
+
+- (NSString*) name
+{
+    return [Sightings name];
+}
+
 @end

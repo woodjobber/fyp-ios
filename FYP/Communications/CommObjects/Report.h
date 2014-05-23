@@ -7,18 +7,23 @@
 //
 
 #import "CommObject.h"
-#import "Animal.h"
 
 @interface Report : CommObject
 
-@property (nonatomic, strong) Animal* animal;
+@property (nonatomic, assign) NSInteger identifier;
+@property (nonatomic, strong) NSString* animal_specie;
+@property (nonatomic, strong) NSString* animal_race;
+@property (nonatomic, strong) NSString* animal_size;
+@property (nonatomic, strong) NSString* animal_color;
+@property (nonatomic, assign) NSInteger animal_age;
+@property (nonatomic, strong) NSString* animal_gender;
 @property (nonatomic, strong) NSString* photoURL;
 @property (nonatomic, strong) NSString* description;
 @property (nonatomic, strong) NSDate* date;
 @property (nonatomic, strong) NSString* place;
-@property (nonatomic, strong) NSString* contacto;
-
+@property (nonatomic, strong) NSString* email;
 
 + (void) list:(void (^)(NSDictionary* ))completion;
++ (void) candidates:(void (^)(NSDictionary* ))completion;
 
 @end

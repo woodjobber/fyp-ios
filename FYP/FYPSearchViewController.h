@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FYPSecondViewController : UIViewController
+@interface FYPSearchViewController : UIViewController
 
 @end

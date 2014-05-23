@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 inakathon. All rights reserved.
 //
 
-#import "FYPSecondViewController.h"
+#import "FYPSearchViewController.h"
 
-@interface FYPSecondViewController ()
+@interface FYPSearchViewController ()
 
 @end
 
-@implementation FYPSecondViewController
+@implementation FYPSearchViewController
 
 - (void)viewDidLoad
 {

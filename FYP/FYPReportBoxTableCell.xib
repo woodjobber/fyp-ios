@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tQz-qt-LZl" userLabel="ReportBox">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReportCell" id="tQz-qt-LZl" userLabel="ReportBox" customClass="FYPReportBoxTableCell">
             <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tQz-qt-LZl" id="QrY-a0-kE1">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="319"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dogexample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qQp-8H-LBX" userLabel="Photo">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dogexample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qQp-8H-LBX" userLabel="Photo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.56820186491935487" green="1" blue="0.52007795960000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,6 +61,14 @@
                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </tableViewCellContentView>
             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="fldDate" destination="64I-lI-dee" id="3dO-eN-8bg"/>
+                <outlet property="fldName" destination="rZE-JI-KuB" id="FS2-O5-ERj"/>
+                <outlet property="fldPlace" destination="eD6-wb-LKU" id="Bam-Ax-b62"/>
+                <outlet property="imgGender" destination="OAl-qZ-Z6l" id="BbA-06-YfS"/>
+                <outlet property="imgSearchLost" destination="hTT-4C-Sg8" id="JRN-Oe-rLQ"/>
+                <outlet property="reportImage" destination="qQp-8H-LBX" id="PS9-6H-aoV"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>

@@ -41,10 +41,10 @@
 		7D5CD778192F924900812B5A /* Report.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD777192F924900812B5A /* Report.m */; };
 		7D5CD77B192F927700812B5A /* Sightings.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD77A192F927700812B5A /* Sightings.m */; };
 		7D5CD781192FBB1000812B5A /* FYPReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD780192FBB1000812B5A /* FYPReportViewController.m */; };
-		AC3337F9192F9C6D009CEA27 /* FYPReportBoxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */; };
+		AC3337F9192F9C6D009CEA27 /* FYPReportBoxTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3337F8192F9C6D009CEA27 /* FYPReportBoxTableCell.xib */; };
 		AC3337FE192FB210009CEA27 /* dogexample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC3337FB192FB210009CEA27 /* dogexample.jpg */; };
 		AC333804192FB534009CEA27 /* backgroundblack.png in Resources */ = {isa = PBXBuildFile; fileRef = AC333803192FB534009CEA27 /* backgroundblack.png */; };
-		AC333807192FB6E4009CEA27 /* FYPReportBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC333806192FB6E4009CEA27 /* FYPReportBoxViewController.m */; };
+		AC333807192FB6E4009CEA27 /* FYPReportBoxTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC333806192FB6E4009CEA27 /* FYPReportBoxTableCell.m */; };
 		AC333809192FD218009CEA27 /* search_light.png in Resources */ = {isa = PBXBuildFile; fileRef = AC333808192FD218009CEA27 /* search_light.png */; };
 		AC33380B192FD353009CEA27 /* sight_light.png in Resources */ = {isa = PBXBuildFile; fileRef = AC33380A192FD353009CEA27 /* sight_light.png */; };
 /* End PBXBuildFile section */
@@ -119,11 +119,11 @@
 		7D5CD77A192F927700812B5A /* Sightings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sightings.m; sourceTree = "<group>"; };
 		7D5CD77F192FBB1000812B5A /* FYPReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYPReportViewController.h; sourceTree = "<group>"; };
 		7D5CD780192FBB1000812B5A /* FYPReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYPReportViewController.m; sourceTree = "<group>"; };
-		AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYPReportBoxViewController.xib; sourceTree = "<group>"; };
+		AC3337F8192F9C6D009CEA27 /* FYPReportBoxTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYPReportBoxTableCell.xib; sourceTree = "<group>"; };
 		AC3337FB192FB210009CEA27 /* dogexample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dogexample.jpg; sourceTree = "<group>"; };
 		AC333803192FB534009CEA27 /* backgroundblack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundblack.png; sourceTree = "<group>"; };
-		AC333805192FB6E4009CEA27 /* FYPReportBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYPReportBoxViewController.h; sourceTree = "<group>"; };
-		AC333806192FB6E4009CEA27 /* FYPReportBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYPReportBoxViewController.m; sourceTree = "<group>"; };
+		AC333805192FB6E4009CEA27 /* FYPReportBoxTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYPReportBoxTableCell.h; sourceTree = "<group>"; };
+		AC333806192FB6E4009CEA27 /* FYPReportBoxTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYPReportBoxTableCell.m; sourceTree = "<group>"; };
 		AC333808192FD218009CEA27 /* search_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_light.png; sourceTree = "<group>"; };
 		AC33380A192FD353009CEA27 /* sight_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sight_light.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -295,11 +295,11 @@
 				7D5CD61B192F831300812B5A /* FYPHomeViewController.m */,
 				7D5CD77F192FBB1000812B5A /* FYPReportViewController.h */,
 				7D5CD780192FBB1000812B5A /* FYPReportViewController.m */,
-				AC3337F8192F9C6D009CEA27 /* FYPReportBoxViewController.xib */,
 				7D5CD77F192FBB1000812B5A /* FYPReportViewController.h */,
 				7D5CD780192FBB1000812B5A /* FYPReportViewController.m */,
-				AC333805192FB6E4009CEA27 /* FYPReportBoxViewController.h */,
-				AC333806192FB6E4009CEA27 /* FYPReportBoxViewController.m */,
+				AC333805192FB6E4009CEA27 /* FYPReportBoxTableCell.h */,
+				AC333806192FB6E4009CEA27 /* FYPReportBoxTableCell.m */,
+				AC3337F8192F9C6D009CEA27 /* FYPReportBoxTableCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -397,7 +397,7 @@
 				AC333809192FD218009CEA27 /* search_light.png in Resources */,
 				AC333804192FB534009CEA27 /* backgroundblack.png in Resources */,
 				AC33380B192FD353009CEA27 /* sight_light.png in Resources */,
-				AC3337F9192F9C6D009CEA27 /* FYPReportBoxViewController.xib in Resources */,
+				AC3337F9192F9C6D009CEA27 /* FYPReportBoxTableCell.xib in Resources */,
 				7D5CD621192F831300812B5A /* Images.xcassets in Resources */,
 				7D5CD610192F831300812B5A /* InfoPlist.strings in Resources */,
 				7D5CD619192F831300812B5A /* Main.storyboard in Resources */,
@@ -440,7 +440,7 @@
 				7D5CD771192F902100812B5A /* AFNetworkActivityIndicatorManager.m in Sources */,
 				7D5CD61C192F831300812B5A /* FYPHomeViewController.m in Sources */,
 				7D5CD646192F8AAB00812B5A /* MediaCache.m in Sources */,
-				AC333807192FB6E4009CEA27 /* FYPReportBoxViewController.m in Sources */,
+				AC333807192FB6E4009CEA27 /* FYPReportBoxTableCell.m in Sources */,
 				7D5CD647192F8AAB00812B5A /* ServerCommunications.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 
 #import "FYPHomeViewController.h"
 #import "Sightings.h"
+#import "FYPReportBoxTableCell.h"
 
 @interface FYPHomeViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -33,7 +34,7 @@
         {
             [Report list:^(NSDictionary * dic) {
                 
-                self.objects = [dic objectForKey:@"reports"];
+                self.objects = dic;
                 [self.tableView  reloadData];
             }];
         }
@@ -44,7 +45,7 @@
         {
             [Sightings list:^(NSDictionary * dic) {
                 
-                self.objects = [dic objectForKey:@"sightings"];
+                self.objects = dic;
                 [self.tableView  reloadData];
             }];
         }
@@ -63,6 +64,11 @@
     return 1;
 }
 
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 320.;    
+}
+
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.objects.count;
@@ -70,7 +76,15 @@
 
 - (UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    FYPReportBoxTableCell* tableCell = (FYPReportBoxTableCell*) [tableView dequeueReusableCellWithIdentifier:@"ReportCell"];
+    if(!tableCell)
+    {
+        tableCell = [FYPReportBoxTableCell instance];
+    }
+    
+    [tableCell setProperties:[self.objects objectAtIndex:indexPath.row]];
+    
+    return tableCell;
 }
 
 @end

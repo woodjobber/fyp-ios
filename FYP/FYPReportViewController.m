@@ -10,8 +10,10 @@
 #import "FYPAppDelegate.h"
 #import "Choices.h"
 #import "ChoicesPickerDialog.h"
+#import "Report.h"
+#import "Sightings.h"
 
-@interface FYPReportViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, ChoicesPickerDelegate>
+@interface FYPReportViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, ChoicesPickerDelegate, CommObjectDelegateProtocol>
 {
     UIActionSheet   *photoActionSheet;
 }
@@ -30,6 +32,7 @@
 @property (nonatomic, strong) IBOutlet UITextField* fldColor;
 @property (nonatomic, strong) IBOutlet UITextField* fldAge;
 @property (nonatomic, strong) IBOutlet UITextField* fldGender;
+@property (nonatomic, strong) IBOutlet UITextField* fldName;
 
 @property (nonatomic, strong) IBOutlet UIButton* btnSpecie;
 @property (nonatomic, strong) IBOutlet UIButton* btnRace;
@@ -40,6 +43,7 @@
 
 @property (nonatomic, strong) IBOutlet UISegmentedControl* reportKind ;
 @property (nonatomic, strong) IBOutlet UICollectionView*   photosCollection;
+@property (nonatomic, strong) IBOutlet UIView*              savingView;
 
 typedef enum
 {
@@ -277,6 +281,50 @@ typedef enum
     }
     
     [fld setText:selected];
+}
+
+- (IBAction)sendReport:(id)sender
+{
+    CommObject *comm;
+    
+    if(self.reportKind.selectedSegmentIndex == 0)
+    {
+        comm = [Report alloc];
+    }
+    else
+        comm = [Sightings alloc] ;
+    
+    
+    NSMutableDictionary* dict =[[NSMutableDictionary alloc] init];
+    
+    [dict setObject:self.fldSpecie.text forKey:@"species"];
+    [dict setObject:self.txtDecription.text forKey:@"description"];
+    [dict setObject:self.fldRace.text forKey:@"race"];
+    [dict setObject:self.fldSize.text forKey:@"size"];
+    [dict setObject:self.fldColor.text forKey:@"color"];
+    [dict setObject:self.fldAge.text forKey:@"age"];
+    [dict setObject:self.fldGender.text forKey:@"sex"];
+    [dict setObject:self.fldName.text forKey:@"name"];
+    
+    comm = [comm initWithData:dict];
+    [self.view endEditing:YES];
+    [self.savingView setHidden:false];
+    
+    [comm setDelegate:self];
+    [comm saveObjectInServer];
+}
+
+- (void) sendInfoReturned:(NSDictionary *)returned
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [self.savingView setHidden:YES];
+        
+        if([returned objectForKey:@"errors"] == nil)
+        {
+
+        }
+    });
 }
 /*
 #pragma mark - Navigation

@@ -156,9 +156,12 @@
                                         <state key="normal" title="Report">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sendReport:" destination="oX6-n9-qkS" eventType="touchUpInside" id="dOQ-Ch-N0a"/>
+                                        </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="crT-rg-J7l">
-                                        <rect key="frame" x="21" y="319" width="284" height="95"/>
+                                        <rect key="frame" x="21" y="346" width="284" height="71"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -191,7 +194,7 @@
                                         </connections>
                                     </collectionView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFX-L4-BcV">
-                                        <rect key="frame" x="21" y="298" width="100" height="21"/>
+                                        <rect key="frame" x="21" y="325" width="100" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
@@ -200,9 +203,8 @@
                                         <rect key="frame" x="21" y="55" width="284" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <segments>
-                                            <segment title="Lost a pet" width="70"/>
-                                            <segment title="Saw a lost pet" width="100"/>
-                                            <segment title="Found a lost pet"/>
+                                            <segment title="Lost a pet"/>
+                                            <segment title="Saw a lost pet"/>
                                         </segments>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp2-3p-z5P">
@@ -265,8 +267,32 @@
                                             <action selector="showOptions:" destination="oX6-n9-qkS" eventType="touchUpInside" id="8Uh-NQ-ezB"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNx-g2-nEc">
+                                        <rect key="frame" x="21" y="304" width="66" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1zI-Md-6dj">
+                                        <rect key="frame" x="96" y="300" width="209" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </scrollView>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pfH-29-Mkl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9C6-ch-CCM">
+                                        <rect key="frame" x="141" y="266" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4279404836683417" green="0.4279404836683417" blue="0.4279404836683417" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                            </view>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PI5-3w-pyY">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -290,11 +316,13 @@
                         <outlet property="fldAge" destination="2zj-z7-KxU" id="6zZ-eb-Con"/>
                         <outlet property="fldColor" destination="Pgp-QN-ldW" id="n6S-QS-ZAZ"/>
                         <outlet property="fldGender" destination="ipo-UA-qy5" id="sry-S2-vST"/>
+                        <outlet property="fldName" destination="1zI-Md-6dj" id="CLm-Gf-lYu"/>
                         <outlet property="fldRace" destination="a1X-cF-b8X" id="0d4-Ic-Lxw"/>
                         <outlet property="fldSize" destination="HP5-pH-EBk" id="d6F-mc-KNS"/>
                         <outlet property="fldSpecie" destination="sPC-IV-VEf" id="eEn-mQ-0qY"/>
                         <outlet property="photosCollection" destination="xdP-Gn-9cg" id="IdD-yc-XnW"/>
                         <outlet property="reportKind" destination="2h1-mV-U4T" id="9wz-LK-pDs"/>
+                        <outlet property="savingView" destination="pfH-29-Mkl" id="Sju-PY-clS"/>
                         <outlet property="scrllView" destination="dSo-fE-ySL" id="HH6-Bh-RyK"/>
                         <outlet property="txtDecription" destination="crT-rg-J7l" id="Wnc-df-vaV"/>
                     </connections>

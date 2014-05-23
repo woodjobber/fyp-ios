@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 inakathon. All rights reserved.
 //
 
-#import "FYPFirstViewController.h"
+#import "FYPHomeViewController"
 
-@interface FYPFirstViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface FYPHomeViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property  (nonatomic, strong) NSArray* objects;
 @end

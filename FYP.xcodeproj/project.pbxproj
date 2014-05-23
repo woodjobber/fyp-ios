@@ -14,8 +14,8 @@
 		7D5CD612192F831300812B5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD611192F831300812B5A /* main.m */; };
 		7D5CD616192F831300812B5A /* FYPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD615192F831300812B5A /* FYPAppDelegate.m */; };
 		7D5CD619192F831300812B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CD617192F831300812B5A /* Main.storyboard */; };
-		7D5CD61C192F831300812B5A /* FYPHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD61B192F831300812B5A /* FYPHome.m */; };
-		7D5CD61F192F831300812B5A /* FYPDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD61E192F831300812B5A /* FYPDetail.m */; };
+		7D5CD61C192F831300812B5A /* FYPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD61B192F831300812B5A /* FYPHomeViewController.m */; };
+		7D5CD61F192F831300812B5A /* FYPSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD61E192F831300812B5A /* FYPSearchViewController.m */; };
 		7D5CD621192F831300812B5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CD620192F831300812B5A /* Images.xcassets */; };
 		7D5CD628192F831300812B5A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5CD627192F831300812B5A /* XCTest.framework */; };
 		7D5CD629192F831300812B5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5CD605192F831300812B5A /* Foundation.framework */; };
@@ -63,10 +63,10 @@
 		7D5CD614192F831300812B5A /* FYPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYPAppDelegate.h; sourceTree = "<group>"; };
 		7D5CD615192F831300812B5A /* FYPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPAppDelegate.m; sourceTree = "<group>"; };
 		7D5CD618192F831300812B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7D5CD61A192F831300812B5A /* FYPHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYPHome.h; sourceTree = "<group>"; };
-		7D5CD61B192F831300812B5A /* FYPHome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPHome.m; sourceTree = "<group>"; };
-		7D5CD61D192F831300812B5A /* FYPDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYPDetail.h; sourceTree = "<group>"; };
-		7D5CD61E192F831300812B5A /* FYPDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPDetail.m; sourceTree = "<group>"; };
+		7D5CD61A192F831300812B5A /* FYPHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYPHomeViewController.h; sourceTree = "<group>"; };
+		7D5CD61B192F831300812B5A /* FYPHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPHomeViewController.m; sourceTree = "<group>"; };
+		7D5CD61D192F831300812B5A /* FYPSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYPSearchViewController.h; sourceTree = "<group>"; };
+		7D5CD61E192F831300812B5A /* FYPSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPSearchViewController.m; sourceTree = "<group>"; };
 		7D5CD620192F831300812B5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7D5CD626192F831300812B5A /* FYPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5CD627192F831300812B5A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -263,12 +263,12 @@
 		AC3337F3192F9678009CEA27 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7D5CD61D192F831300812B5A /* FYPDetail.h */,
+				7D5CD61D192F831300812B5A /* FYPSearchViewController.h */,
 				AC3337F6192F9ADA009CEA27 /* FYPDetail.xib */,
-				7D5CD61E192F831300812B5A /* FYPDetail.m */,
-				7D5CD61A192F831300812B5A /* FYPHome.h */,
+				7D5CD61E192F831300812B5A /* FYPSearchViewController.m */,
+				7D5CD61A192F831300812B5A /* FYPHomeViewController.h */,
 				AC3337F8192F9C6D009CEA27 /* FYPReportBox.xib */,
-				7D5CD61B192F831300812B5A /* FYPHome.m */,
+				7D5CD61B192F831300812B5A /* FYPHomeViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -387,9 +387,9 @@
 				7D5CD645192F8AAB00812B5A /* CommObject.m in Sources */,
 				7D5CD612192F831300812B5A /* main.m in Sources */,
 				7D5CD772192F902100812B5A /* AFPropertyListRequestOperation.m in Sources */,
-				7D5CD61F192F831300812B5A /* FYPDetail.m in Sources */,
+				7D5CD61F192F831300812B5A /* FYPSearchViewController.m in Sources */,
 				7D5CD771192F902100812B5A /* AFNetworkActivityIndicatorManager.m in Sources */,
-				7D5CD61C192F831300812B5A /* FYPHome.m in Sources */,
+				7D5CD61C192F831300812B5A /* FYPHomeViewController.m in Sources */,
 				7D5CD646192F8AAB00812B5A /* MediaCache.m in Sources */,
 				7D5CD647192F8AAB00812B5A /* ServerCommunications.m in Sources */,
 			);

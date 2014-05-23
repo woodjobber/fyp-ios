@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FYPFirstViewController : UIViewController
+@interface FYPHomeViewController : UIViewController
 
 @end
